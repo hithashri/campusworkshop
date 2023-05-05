@@ -2,6 +2,7 @@
 from app import postgres
 
 
+
 def fetch_todo() -> dict:
     """Reads all tasks listed in the todo table
     Returns:
@@ -47,6 +48,8 @@ def update_status_entry(task_id: int , text: str):
     cursor.execute(query)
     postgres.commit()
     cursor.close()
+    
+# update_status_entry(tID, 'Completed')
 
 def insert_new_task(text: str , id: int) -> int:
     """Insert new task to todo table.
