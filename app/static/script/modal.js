@@ -93,7 +93,7 @@ $(document).ready(function () {
             new_state = "In Progress"
         }
         if (state.text() === "In Progress") {
-            new_state = "Completed"
+            new_state = "completed"
         }
        
         console.log(new_state)
